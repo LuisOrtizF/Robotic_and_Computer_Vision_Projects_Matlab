@@ -1,0 +1,15 @@
+{
+    "name": "com.ubuntu.developer.username.matlabtoc++",
+    "description": "description of MatlabtoC++",
+    "framework": "ubuntu-sdk-14.04-qml",
+    "architecture": "all",
+    "title": "MatlabtoC++",
+    "hooks": {
+        "MatlabtoC++": {
+            "apparmor": "MatlabtoC++.json",
+            "desktop": "MatlabtoC++.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": ""
+}

@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/luis/Documents/DRIVE/LUIS/CODIGOS/Robotic_and_Computer_Vision_Projects_Matlab/Convert_Function_Matlab_to_C++/Test_Function_Linux/build",
+  "command": "/usr/bin/g++-5    -I/home/luis/Documents/DRIVE/LUIS/CODIGOS/Robotic_and_Computer_Vision_Projects_Matlab/Convert_Function_Matlab_to_C++/Test_Function_Linux/libcbdetect  -g   -o CMakeFiles/matlab2cpp.dir/main.cpp.o -c /home/luis/Documents/DRIVE/LUIS/CODIGOS/Robotic_and_Computer_Vision_Projects_Matlab/Convert_Function_Matlab_to_C++/Test_Function_Linux/main.cpp",
+  "file": "/home/luis/Documents/DRIVE/LUIS/CODIGOS/Robotic_and_Computer_Vision_Projects_Matlab/Convert_Function_Matlab_to_C++/Test_Function_Linux/main.cpp"
+},
+{
+  "directory": "/home/luis/Documents/DRIVE/LUIS/CODIGOS/Robotic_and_Computer_Vision_Projects_Matlab/Convert_Function_Matlab_to_C++/Test_Function_Linux/build/libcbdetect",
+  "command": "/usr/bin/g++-5    -I/home/luis/Documents/DRIVE/LUIS/CODIGOS/Robotic_and_Computer_Vision_Projects_Matlab/Convert_Function_Matlab_to_C++/Test_Function_Linux/libcbdetect  -g   -o CMakeFiles/libcbdetect.dir/leer.cpp.o -c /home/luis/Documents/DRIVE/LUIS/CODIGOS/Robotic_and_Computer_Vision_Projects_Matlab/Convert_Function_Matlab_to_C++/Test_Function_Linux/libcbdetect/leer.cpp",
+  "file": "/home/luis/Documents/DRIVE/LUIS/CODIGOS/Robotic_and_Computer_Vision_Projects_Matlab/Convert_Function_Matlab_to_C++/Test_Function_Linux/libcbdetect/leer.cpp"
+}
+]

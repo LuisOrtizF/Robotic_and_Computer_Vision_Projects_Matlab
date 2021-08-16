@@ -1,0 +1,1033 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Code Generation Report</title>
+<link rel="stylesheet" type="text/css" href="resources/eml_report.css" />
+<link rel="stylesheet" type="text/css" href="resources/jQuery/ui.resizable.css" />
+<link rel="stylesheet" type="text/css" href="index.css" />
+
+<script type="text/javascript" src="resources/jQuery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="resources/jQuery/jquery-ui-1.7.custom.min.js"></script>
+<script type="text/javascript" src="resources/jQuery/jquery.tablesorter.mod.js"></script>
+<script type="text/javascript" src="resources/jQuery/jquery.hotkeys-0.7.8.js"></script>
+<script type="text/javascript" src="resources/eml_report_interactions.js"></script>
+<script type="text/javascript" src="resources/eml_report_layout.js"></script>
+<script type="text/javascript" src="rtwshrink.js"></script>
+<script type="text/javascript">
+var localizedMessages = {
+    callSelectPrompt: "Select a function call:",
+    callSelectSource: "Calls from this function",
+    callSelectTarget: "Calls to this function",
+    infoForExpression: "Information for the selected expression:",
+    infoForVarType: "Information for the selected variable:",
+    infoForVarConst: "Information for the selected compile-time constant:",
+    infoForVarNone: "This variable does not have information associated with it.",
+    infoForFilter: "Matched {0}/{1} functions, {2}/{3} methods",
+    autoExtrinsicCall: "Only supported within the MATLAB environment."
+};
+var keyBindings = {
+        selectMCodeTab: "Ctrl+m",
+    selectCallStackTab: "Ctrl+k",
+        selectCCodeTab: "Ctrl+c",
+       selectReportTab: "Ctrl+r",
+     selectCenterPanel: "Ctrl+w",
+      selectSummaryTab: "Ctrl+s",
+     selectMessagesTab: "Ctrl+a",
+    selectWatchListTab: "Ctrl+v",
+     selectBuildLogTab: "Ctrl+t"
+};
+var functionInfoTable = {
+ MATLABcode1: "chessboardsFromCorners1_mcode.html",
+ fpath1: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/chessboardsFromCorners.m",
+ lines1: [1, 2, 97],
+ watch1: "chessboardsFromCorners1_watch.html",
+ title1: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\chessboardsFromCorners.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\chessboardsFromCorners.m')\">chessboardsFromCorners</a></span>",
+ tcall1: [  ],
+ scall1: [ [ "From line 23 to initChessboard", "208#srcline2" ], [ "From line 27 to chessboardEnergy", "236#srcline2" ], [ "From line 35 to chessboardEnergy", "236#srcline2" ], [ "From line 39 to growChessboard", "390#srcline2" ], [ "From line 40 to chessboardEnergy", "236#srcline2" ], [ "From line 57 to chessboardEnergy", "236#srcline2" ], [ "From line 72 to chessboardEnergy", "236#srcline2" ], [ "From line 84 to chessboardEnergy", "236#srcline2" ] ],
+ MATLABcode122: "directionalNeighbor122_mcode.html",
+ fpath122: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/initChessboard.m",
+ lines122: [41, 43, 65],
+ watch122: "directionalNeighbor122_watch.html",
+ title122: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\initChessboard.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\initChessboard.m')\">initChessboard &gt; directionalNeighbor</a></span>",
+ tcall122: [ [ "From initChessboard line 23", "208#F122N14:B87" ], [ "From initChessboard line 24", "208#F122N14:B104" ], [ "From initChessboard line 25", "208#F122N14:B121" ], [ "From initChessboard line 26", "208#F122N14:B138" ], [ "From initChessboard line 29", "208#F122N14:B155" ], [ "From initChessboard line 30", "208#F122N14:B175" ], [ "From initChessboard line 31", "208#F122N14:B195" ], [ "From initChessboard line 32", "208#F122N14:B215" ] ],
+ scall122: [  ],
+ MATLABcode208: "initChessboard208_mcode.html",
+ fpath208: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/initChessboard.m",
+ lines208: [1, 2, 43],
+ watch208: "initChessboard208_watch.html",
+ title208: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\initChessboard.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\initChessboard.m')\">initChessboard</a></span>",
+ tcall208: [ [ "From chessboardsFromCorners line 23", "1#F208N13:B80" ] ],
+ scall208: [ [ "From line 23 to initChessboard > directionalNeighbor", "122#srcline43" ], [ "From line 24 to initChessboard > directionalNeighbor", "122#srcline43" ], [ "From line 25 to initChessboard > directionalNeighbor", "122#srcline43" ], [ "From line 26 to initChessboard > directionalNeighbor", "122#srcline43" ], [ "From line 29 to initChessboard > directionalNeighbor", "122#srcline43" ], [ "From line 30 to initChessboard > directionalNeighbor", "122#srcline43" ], [ "From line 31 to initChessboard > directionalNeighbor", "122#srcline43" ], [ "From line 32 to initChessboard > directionalNeighbor", "122#srcline43" ] ],
+ MATLABcode236: "chessboardEnergy236_mcode.html",
+ fpath236: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/chessboardEnergy.m",
+ lines236: [1, 2, 29],
+ watch236: "chessboardEnergy236_watch.html",
+ title236: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\chessboardEnergy.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\chessboardEnergy.m')\">chessboardEnergy</a></span>",
+ tcall236: [ [ "From chessboardsFromCorners line 27", "1#F236N2:B97" ], [ "From chessboardsFromCorners line 35", "1#F236N2:B108" ], [ "From chessboardsFromCorners line 40", "1#F236N2:B133" ], [ "From chessboardsFromCorners line 57", "1#F236N2:B165" ], [ "From chessboardsFromCorners line 72", "1#F236N2:B241" ], [ "From chessboardsFromCorners line 84", "1#F236N2:B291" ] ],
+ scall236: [  ],
+ MATLABcode283: "predictCorners283_mcode.html",
+ fpath283: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/growChessboard.m",
+ lines283: [53, 54, 75],
+ watch283: "predictCorners283_watch.html",
+ title283: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\growChessboard.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\growChessboard.m')\">growChessboard &gt; predictCorners</a></span>",
+ tcall283: [ [ "From growChessboard line 25", "390#F283N12:B68" ], [ "From growChessboard line 32", "390#F283N12:B127" ], [ "From growChessboard line 39", "390#F283N12:B186" ], [ "From growChessboard line 46", "390#F283N12:B238" ] ],
+ scall283: [  ],
+ MATLABcode320: "assignClosestCorners320_mcode.html",
+ fpath320: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/growChessboard.m",
+ lines320: [74, 75, 103],
+ watch320: "assignClosestCorners320_watch.html",
+ title320: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\growChessboard.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\growChessboard.m')\">growChessboard &gt; assignClosestCorners</a></span>",
+ tcall320: [ [ "From growChessboard line 26", "390#F320N11:B101" ], [ "From growChessboard line 33", "390#F320N11:B160" ], [ "From growChessboard line 40", "390#F320N11:B212" ], [ "From growChessboard line 47", "390#F320N11:B264" ] ],
+ scall320: [  ],
+ MATLABcode390: "growChessboard390_mcode.html",
+ fpath390: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/growChessboard.m",
+ lines390: [1, 2, 54],
+ watch390: "growChessboard390_watch.html",
+ title390: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\growChessboard.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\growChessboard.m')\">growChessboard</a></span>",
+ tcall390: [ [ "From chessboardsFromCorners line 39", "1#F390N10:B123" ] ],
+ scall390: [ [ "From line 25 to growChessboard > predictCorners", "283#srcline54" ], [ "From line 26 to growChessboard > assignClosestCorners", "320#srcline75" ], [ "From line 32 to growChessboard > predictCorners", "283#srcline54" ], [ "From line 33 to growChessboard > assignClosestCorners", "320#srcline75" ], [ "From line 39 to growChessboard > predictCorners", "283#srcline54" ], [ "From line 40 to growChessboard > assignClosestCorners", "320#srcline75" ], [ "From line 46 to growChessboard > predictCorners", "283#srcline54" ], [ "From line 47 to growChessboard > assignClosestCorners", "320#srcline75" ] ],
+ MATLABcode441: "extractuv441_mcode.html",
+ fpath441: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/extractuv.m",
+ lines441: [1, 2, 39],
+ watch441: "extractuv441_watch.html",
+ title441: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\extractuv.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\extractuv.m')\">extractuv</a></span>",
+ tcall441: [  ],
+ scall441: [  ],
+ MATLABcode512: "findCorners512_mcode.html",
+ fpath512: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/findCorners.m",
+ lines512: [1, 2, 131],
+ watch512: "findCorners512_watch.html",
+ title512: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\findCorners.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\findCorners.m')\">findCorners</a></span>",
+ tcall512: [  ],
+ scall512: [ [ "From line 44 to createCorrelationPatch", "694#srcline2" ], [ "From line 71 to nonMaximumSuppression", "738#srcline2" ], [ "From line 84 to refineCorners", "855#srcline2" ], [ "From line 107 to scoreCorners", "914#srcline1" ] ],
+ MATLABcode694: "createCorrelationPatch694_mcode.html",
+ fpath694: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/createCorrelationPatch.m",
+ lines694: [1, 2, 52],
+ watch694: "createCorrelationPatch694_watch.html",
+ title694: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\createCorrelationPatch.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\createCorrelationPatch.m')\">createCorrelationPatch</a></span>",
+ tcall694: [ [ "From findCorners line 44", "512#F694N6:B265" ], [ "From cornerCorrelationScore line 32", "898#F694N6:B175" ] ],
+ scall694: [  ],
+ MATLABcode738: "nonMaximumSuppression738_mcode.html",
+ fpath738: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/nonMaximumSuppression.m",
+ lines738: [1, 2, 50],
+ watch738: "nonMaximumSuppression738_watch.html",
+ title738: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\nonMaximumSuppression.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\nonMaximumSuppression.m')\">nonMaximumSuppression</a></span>",
+ tcall738: [ [ "From findCorners line 71", "512#F738N15:B409" ] ],
+ scall738: [  ],
+ MATLABcode834: "findModesMeanShift834_mcode.html",
+ fpath834: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/findModesMeanShift.m",
+ lines834: [1, 2, 49],
+ watch834: "findModesMeanShift834_watch.html",
+ title834: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\findModesMeanShift.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\findModesMeanShift.m')\">findModesMeanShift</a></span>",
+ tcall834: [ [ "From refineCorners > edgeOrientations line 145", "854#F834N9:B291" ] ],
+ scall834: [  ],
+ MATLABcode854: "edgeOrientations854_mcode.html",
+ fpath854: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/refineCorners.m",
+ lines854: [117, 119, 178],
+ watch854: "edgeOrientations854_watch.html",
+ title854: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\refineCorners.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\refineCorners.m')\">refineCorners &gt; edgeOrientations</a></span>",
+ tcall854: [ [ "From refineCorners line 19", "855#F854N17:B123" ] ],
+ scall854: [ [ "From line 145 to findModesMeanShift", "834#srcline2" ] ],
+ MATLABcode855: "refineCorners855_mcode.html",
+ fpath855: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/refineCorners.m",
+ lines855: [1, 2, 119],
+ watch855: "refineCorners855_watch.html",
+ title855: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\refineCorners.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\refineCorners.m')\">refineCorners</a></span>",
+ tcall855: [ [ "From findCorners line 84", "512#F855N16:B482" ] ],
+ scall855: [ [ "From line 19 to refineCorners > edgeOrientations", "854#srcline119" ] ],
+ MATLABcode898: "cornerCorrelationScore898_mcode.html",
+ fpath898: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/cornerCorrelationScore.m",
+ lines898: [1, 2, 59],
+ watch898: "cornerCorrelationScore898_watch.html",
+ title898: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\cornerCorrelationScore.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\cornerCorrelationScore.m')\">cornerCorrelationScore</a></span>",
+ tcall898: [ [ "From scoreCorners line 21", "914#F898N5:B170" ] ],
+ scall898: [ [ "From line 32 to createCorrelationPatch", "694#srcline2" ] ],
+ MATLABcode914: "scoreCorners914_mcode.html",
+ fpath914: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/scoreCorners.m",
+ lines914: [1, 1, 29],
+ watch914: "scoreCorners914_watch.html",
+ title914: "Function: <span class='functionname'><a title='C:&nbsp;\\Users\\Luisito\\Documents\\MAESTRIA&nbsp;ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\scoreCorners.m' class='functionlink' href=\"matlab: open('C:\\Users\\Luisito\\Documents\\MAESTRIA ING_MECATRONICA\\Tesis\\Codigos\\DeteccionCornersLargasDistancias\\v7\\scoreCorners.m')\">scoreCorners</a></span>",
+ tcall914: [ [ "From findCorners line 107", "512#F914N18:B637" ] ],
+ scall914: [ [ "From line 21 to cornerCorrelationScore", "898#srcline2" ] ],
+ rootFcnID: "1",
+ firstPage: "1",
+ htmlRoot: "C:/Users/Luisito/Documents/MAESTRIA%20ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/codegen/mex/chessboardsFromCorners_mex/html/"
+};
+var scriptInfoTable = {
+ fpath1: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/chessboardsFromCorners.m",
+ fpath2: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/isBuiltInNumeric.m",
+ fpath3: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/isinf.m",
+ fpath4: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/isnan.m",
+ fpath5: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/isfinite.m",
+ fpath6: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+scalar/floor.m",
+ fpath7: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/applyScalarFunctionInPlace.m",
+ fpath8: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elfun/floor.m",
+ fpath9: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/scalarEg.m",
+ fpath10: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/fixedpoint/isnumerictype.m",
+ fpath11: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/fixedpoint/isfimath.m",
+ fpath12: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/fixedpoint/isfi.m",
+ fpath13: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/intmax.m",
+ fpath14: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/intmin.m",
+ fpath15: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/eml/eml_int_forloop_overflow_check.m",
+ fpath16: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/floatModel.m",
+ fpath17: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/flintmax.m",
+ fpath18: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+scalar/abs.m",
+ fpath19: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/applyScalarFunction.m",
+ fpath20: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elfun/abs.m",
+ fpath21: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/ops/colon.m",
+ fpath22: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/private/eml_realmax.m",
+ fpath23: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/realmax.m",
+ fpath24: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/scalexpCompatible.m",
+ fpath25: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/div.m",
+ fpath26: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/ops/rdivide.m",
+ fpath27: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/ops/mrdivide.p",
+ fpath28: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/indexShapeCheck.m",
+ fpath29: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/nullAssignment.m",
+ fpath30: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/iscolumn.m",
+ fpath31: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/length.m",
+ fpath32: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/ops/eml_mtimes_helper.m",
+ fpath33: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/scalexpAllocNoCheck.m",
+ fpath34: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/scalexpAlloc.m",
+ fpath35: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/useParforConst.m",
+ fpath36: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/ops/power.m",
+ fpath37: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/error.m",
+ fpath38: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/isDomainError.m",
+ fpath39: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+scalar/sqrt.m",
+ fpath40: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elfun/sqrt.m",
+ fpath41: "C:/Program Files/MATLAB/R2016a/toolbox/shared/coder/coder/+coder/+internal/narginchk.m",
+ fpath42: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/constNonSingletonDim.m",
+ fpath43: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/relop.m",
+ fpath44: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/minOrMax.m",
+ fpath45: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/min.m",
+ fpath46: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/initChessboard.m",
+ fpath47: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/private/eml_isequal_core.m",
+ fpath48: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/isequal.m",
+ fpath49: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/allOrAny.m",
+ fpath50: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/ops/any.m",
+ fpath51: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/prodsize.m",
+ fpath52: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/var.m",
+ fpath53: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/std.m",
+ fpath54: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/private/process_sumprod_inputs.m",
+ fpath55: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/private/combine_vector_elements.m",
+ fpath56: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/mean.m",
+ fpath57: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+blas/inline.m",
+ fpath58: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+blas/use_refblas.m",
+ fpath59: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+blas/threshold.m",
+ fpath60: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+blas/xnrm2.m",
+ fpath61: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/private/eml_realmin.m",
+ fpath62: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/realmin.m",
+ fpath63: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/indexMinus.m",
+ fpath64: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/indexTimes.m",
+ fpath65: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/indexPlus.m",
+ fpath66: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+refblas/xnrm2.m",
+ fpath67: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/matfun/norm.m",
+ fpath68: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/max.m",
+ fpath69: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/chessboardEnergy.m",
+ fpath70: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+scalar/atan2.m",
+ fpath71: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elfun/atan2.m",
+ fpath72: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+scalar/cos.m",
+ fpath73: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elfun/cos.m",
+ fpath74: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+scalar/sin.m",
+ fpath75: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elfun/sin.m",
+ fpath76: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/cat.m",
+ fpath77: "C:/Program Files/MATLAB/R2016a/toolbox/shared/coder/coder/+coder/+internal/indexIntRelop.m",
+ fpath78: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/growChessboard.m",
+ fpath79: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/find.m",
+ fpath80: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/ops/all.m",
+ fpath81: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/checkCellRefIndexIsScalar.m",
+ fpath82: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/extractuv.m",
+ fpath83: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/assertValidDim.m",
+ fpath84: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/findCorners.m",
+ fpath85: "C:/Program Files/MATLAB/R2016a/toolbox/coder/coder/+coder/+internal/cell.p",
+ fpath86: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/lang/validateattributes.m",
+ fpath87: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/isIntScalar.m",
+ fpath88: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/isPosIntScalar.m",
+ fpath89: "C:/Program Files/MATLAB/R2016a/toolbox/matlab/images/im2double.m",
+ fpath90: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/conv2.m",
+ fpath91: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/private/convshapestr2id.m",
+ fpath92: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/private/convn_kernel.m",
+ fpath93: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/indexDivide.m",
+ fpath94: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/private/convBlasThreshold.m",
+ fpath95: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+blas/xaxpy.m",
+ fpath96: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/isaUint.m",
+ fpath97: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+blas/isNullEmpty.m",
+ fpath98: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+refblas/xaxpy.m",
+ fpath99: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+blas/BLASApi.m",
+ fpath100: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+blas/int.m",
+ fpath101: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+blas/size_ptr.m",
+ fpath102: "C:/Program Files/MATLAB/R2016a/toolbox/coder/coder/+coder/+internal/c_cast.p",
+ fpath103: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+blas/xdot.m",
+ fpath104: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+refblas/xdotx.m",
+ fpath105: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+refblas/xdot.m",
+ fpath106: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+blas/xdotu.m",
+ fpath107: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/strfun/char.m",
+ fpath108: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/sxalloc.m",
+ fpath109: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+scalar/exp.m",
+ fpath110: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elfun/exp.m",
+ fpath111: "C:/Program Files/MATLAB/R2016a/toolbox/stats/eml/normpdf.m",
+ fpath112: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/private/sumprod.m",
+ fpath113: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/sum.m",
+ fpath114: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/createCorrelationPatch.m",
+ fpath115: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/nonMaximumSuppression.m",
+ fpath116: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+scalar/round.m",
+ fpath117: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elfun/round.m",
+ fpath118: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/isFloatClass.m",
+ fpath119: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/private/eml_eps.m",
+ fpath120: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elmat/eps.m",
+ fpath121: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+scalar/mod.m",
+ fpath122: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elfun/mod.m",
+ fpath123: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/sortIdx.m",
+ fpath124: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/sort.m",
+ fpath125: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/datafun/sort.m",
+ fpath126: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/findModesMeanShift.m",
+ fpath127: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/sortLE.m",
+ fpath128: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/refineCorners.m",
+ fpath129: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/cornerCorrelationScore.m",
+ fpath130: "C:/Users/Luisito/Documents/MAESTRIA ING_MECATRONICA/Tesis/Codigos/DeteccionCornersLargasDistancias/v7/scoreCorners.m",
+ fpath131: "C:/Program Files/MATLAB/R2016a/toolbox/eml/eml/+coder/+internal/+scalar/sign.m",
+ fpath132: "C:/Program Files/MATLAB/R2016a/toolbox/eml/lib/matlab/elfun/sign.m"
+};
+</script>
+</head>
+<body>
+
+<div class="west">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="MATLABcode"><span>MATLAB code</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="callstack"><span>Call stack</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="ccode"><span>C code</span></span></li>
+</ul>
+<div id="MATLABcodebody" class="ui-tabs-panel">
+<!-- Begin Filter -->
+<div class="grayline methodset" onclick="filterClick(event);">
+<a class="collapsed">Filter</a>
+</div>
+<div id="filterbody" class="hidden">
+<table class="myfunc-filter-tbl">
+<tr>
+<td title="Use this filter to display only functions and methods that contain variables or expressions with the specified attributes." colspan="2" class="checkbox">
+<div class="myfunc-filterby-chk"><input type="checkbox" class="filterenable" />
+<div class="filter-enable-lbl">Filter functions and methods</div></div></td></tr><tr>
+<td class="label"><div class="myfunc-filterby-lbl">Filter by:</div></td>
+<td class="select">
+<div class="filters">
+<select class="myfunc-filterby">
+<option id="size">Size</option>
+<option id="complex">Complexity</option>
+<option id="class">Class</option>
+</select>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label"><div class="myfunc-filterstr-lbl">Filter:</div></td>
+<td class="input"><div>
+
+<div class="size">
+<select class="myfunc-filter size">
+<option value="1 122 208 236 320 390 441 512 694 738 834 854 855 898 914">1 x 1</option>
+<option value="122 208 694 854 855 898">1 x 2</option>
+<option value="512 914">1 x 3</option>
+<option value="834 854">1 x 32</option>
+<option value="1">1 x 4</option>
+<option value="1">1 x 4 *</option>
+<option value="1 441 834">1 x 5</option>
+<option value="208">1 x 6</option>
+<option value="122 320 390">1 x <b>:</b>100</option>
+<option value="898">1 x <b>:</b>2</option>
+<option value="1 122 208 236 390 441">100 x 1</option>
+<option value="1 122 208 236 390 441">100 x 2</option>
+<option value="854">2 x 1</option>
+<option value="854">2 x 3</option>
+<option value="236">3 x 2</option>
+<option value="512">3 x 3</option>
+<option value="122">3 x 3 *</option>
+<option value="441">4 x 4</option>
+<option value="1">5 x 2</option>
+<option value="441">5 x 7</option>
+<option value="512">6 x 3</option>
+<option value="441">6 x 7</option>
+<option value="441">7 x 2</option>
+<option value="512 738 855 914">720 x 1280</option>
+<option value="320"><b>:</b>1 x 1</option>
+<option value="122"><b>:</b>100 x 1</option>
+<option value="122 320 390"><b>:</b>100 x 2</option>
+<option value="320"><b>:</b>100 x <b>:</b>100</option>
+<option value="208"><b>:</b>3 x <b>:</b>3</option>
+<option value="1"><b>:</b>5 x 1</option>
+<option value="441"><b>:</b>5 x 2</option>
+<option value="854"><b>:</b>518400 x 1</option>
+<option value="898 914"><b>:</b>720 x <b>:</b>1280</option>
+<option value="512 694 854 855 898"><b>:</b>720 x <b>:</b>720</option>
+<option value="122"><b>:</b>9 x 1</option>
+<option value="898"><b>:</b>921600 x 1</option>
+<option value="283 390 512 834 914"><b>:</b>? x 1</option>
+<option value="283 320 390 441 512"><b>:</b>? x 2</option>
+<option value="854"><b>:</b>? x 3</option>
+<option value="512 738 834 854 855 914"><b>:</b>? x <b>:</b>2</option>
+<option value="1 236 390"><b>:</b>? x <b>:</b>?</option>
+</select>
+</div>
+
+<div class="complex">
+<select class="myfunc-filter complex">
+<option value="">Complex values</option>
+<option value="1 122 208 236 283 320 390 441 512 694 738 834 854 855 898 914">Real values</option>
+</select>
+</div>
+<!-- Begin Class Filter -->
+<div class="class">
+<select class="myfunc-filter class">
+<option value="1 441">cell</option>
+<option value="1 122 208 236 283 320 390 441 512 694 738 834 854 855 898 914">double</option>
+<option value="512">logical</option>
+<option value="1 122 208 236 390 441 512 694 855 898 914">struct</option>
+<option value="512">uint8</option>
+</select>
+</div>
+<!-- End Class Filter -->
+</div>
+</td>
+</tr>
+</table>
+<div class="myfunc-count"></div>
+</div>
+<!-- End Filter -->
+<div class="grayline methodset" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionSetClick(event);">
+<a class="expanded">Functions</a>
+</div>
+<!-- Begin Function Tree -->
+<div id="functiontreebody">
+<div class="functionwrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionTreeClick(event);">
+<ol class="tree">
+<!-- Begin Function Tree Roots -->
+<li class="leaf  passed"><a href="#" class="fcn " id="F236N2:F1">chessboardEnergy</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F1N3:F2">chessboardsFromCorners</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F898N5:F3">cornerCorrelationScore</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F694N6:F4">createCorrelationPatch</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F441N7:F5">extractuv</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F512N8:F6">findCorners</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F834N9:F7">findModesMeanShift</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F390N10:F8">growChessboard</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F320N11:F9">growChessboard &gt; assignClosestCorners</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F283N12:F10">growChessboard &gt; predictCorners</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F208N13:F11">initChessboard</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F122N14:F12">initChessboard &gt; directionalNeighbor</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F738N15:F13">nonMaximumSuppression</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F855N16:F14">refineCorners</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F854N17:F15">refineCorners &gt; edgeOrientations</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F914N18:F16">scoreCorners</a></li>
+<!-- End Function Tree Roots -->
+</ol>
+<!-- Function Tree Nodes -->
+<div class="functiontreenodes hidden">
+</div>
+<!-- End Function Tree Nodes -->
+</div>
+</div>
+<!-- End Function Tree -->
+<!-- Begin Class Tree -->
+<div class="grayline methodset" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="methodSetClick(event);">
+<a class="expanded">Classes</a>
+</div>
+<div id="classlistbody">
+<div class="classwrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="classTreeClick(event);">
+<ol class="tree">
+<!-- Begin Class Tree Roots -->
+<!-- End Class Tree Roots -->
+</ol>
+<!-- Class Tree Nodes -->
+<div class="classlistnodes hidden">
+</div>
+</div>
+</div>
+<!-- End Class Tree -->
+</div>
+<!-- Begin Call Tree -->
+<div id="callstackbody" class="ui-tabs-panel hidden">
+<div class="treewrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="callTreeClick(event);">
+<ol class="tree">
+<!-- Call Tree Root -->
+<li class="node collapsed passed"><a href="#" class="fcn " id="F1N3:L1">chessboardsFromCorners</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F208N13:L2">initChessboard</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F236N2:L3">chessboardEnergy</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F390N10:L4">growChessboard</a></li>
+</ul>
+</li>
+<!-- Call Tree Root -->
+<li class="leaf passed"><a href="#" class="fcn " id="F441N7:L14">extractuv</a>
+</li>
+<!-- Call Tree Root -->
+<li class="node collapsed passed"><a href="#" class="fcn " id="F512N8:L15">findCorners</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F694N6:L16">createCorrelationPatch</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F738N15:L17">nonMaximumSuppression</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F855N16:L18">refineCorners</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F914N18:L19">scoreCorners</a></li>
+</ul>
+</li>
+</ol>
+<!-- Call Tree Nodes -->
+<div class="callstacknodes hidden">
+<ol class="callstacknode" id="callstacknode1">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F1N3:l1">chessboardsFromCorners</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F208N13:l2">initChessboard</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F236N2:l3">chessboardEnergy</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F390N10:l4">growChessboard</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode122">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F122N14:l5">initChessboard &gt; directionalNeighbor</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode208">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F208N13:l6">initChessboard</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F122N14:l7">initChessboard &gt; directionalNeighbor</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode236">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F236N2:l8">chessboardEnergy</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode283">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F283N12:l9">growChessboard &gt; predictCorners</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode320">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F320N11:l10">growChessboard &gt; assignClosestCorners</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode390">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F390N10:l11">growChessboard</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F283N12:l12">growChessboard &gt; predictCorners</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F320N11:l13">growChessboard &gt; assignClosestCorners</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode441">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F441N7:l14">extractuv</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode512">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F512N8:l15">findCorners</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F694N6:l16">createCorrelationPatch</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F738N15:l17">nonMaximumSuppression</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F855N16:l18">refineCorners</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F914N18:l19">scoreCorners</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode694">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F694N6:l20">createCorrelationPatch</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode738">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F738N15:l21">nonMaximumSuppression</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode834">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F834N9:l22">findModesMeanShift</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode854">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F854N17:l23">refineCorners &gt; edgeOrientations</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F834N9:l24">findModesMeanShift</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode855">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F855N16:l25">refineCorners</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F854N17:l26">refineCorners &gt; edgeOrientations</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode898">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F898N5:l27">cornerCorrelationScore</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F694N6:l28">createCorrelationPatch</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode914">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F914N18:l29">scoreCorners</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F898N5:l30">cornerCorrelationScore</a></li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<!-- End Call Tree -->
+<!-- Begin C Code -->
+<div id="ccodebody" class="ui-tabs-panel hidden">
+<div class="grayline methodset" onclick="ccodeClick(event,1);">
+<a class="expanded">Target Source Files</a>
+</div>
+<!-- Begin C Code List -->
+<div id="ccodelistbody1" class="visible">
+<table class="myfunc-list" cellspacing="0" cellpadding="0" onclick="cFileClickWithMexWarning(event);">
+<tbody>
+<tr class="ccode" id="all_c.html"><td class="ccode"><a href="#">all.c</a></td></tr>
+<tr class="ccode" id="all_h.html"><td class="ccode"><a href="#">all.h</a></td></tr>
+<tr class="ccode" id="any_c.html"><td class="ccode"><a href="#">any.c</a></td></tr>
+<tr class="ccode" id="any_h.html"><td class="ccode"><a href="#">any.h</a></td></tr>
+<tr class="ccode" id="atan2_c.html"><td class="ccode"><a href="#">atan2.c</a></td></tr>
+<tr class="ccode" id="atan2_h.html"><td class="ccode"><a href="#">atan2.h</a></td></tr>
+<tr class="ccode" id="chessboardEnergy_c.html"><td class="ccode"><a href="#">chessboardEnergy.c</a></td></tr>
+<tr class="ccode" id="chessboardEnergy_h.html"><td class="ccode"><a href="#">chessboardEnergy.h</a></td></tr>
+<tr class="ccode" id="chessboardsFromCorners_c.html"><td class="ccode"><a href="#">chessboardsFromCorners.c</a></td></tr>
+<tr class="ccode" id="chessboardsFromCorners_h.html"><td class="ccode"><a href="#">chessboardsFromCorners.h</a></td></tr>
+<tr class="ccode" id="chessboardsFromCorners_mex_data_c.html"><td class="ccode"><a href="#">chessboardsFromCorners_mex_data.c</a></td></tr>
+<tr class="ccode" id="chessboardsFromCorners_mex_data_h.html"><td class="ccode"><a href="#">chessboardsFromCorners_mex_data.h</a></td></tr>
+<tr class="ccode" id="chessboardsFromCorners_mex_emxutil_c.html"><td class="ccode"><a href="#">chessboardsFromCorners_mex_emxutil.c</a></td></tr>
+<tr class="ccode" id="chessboardsFromCorners_mex_emxutil_h.html"><td class="ccode"><a href="#">chessboardsFromCorners_mex_emxutil.h</a></td></tr>
+<tr class="ccode" id="chessboardsFromCorners_mex_initialize_c.html"><td class="ccode"><a href="#">chessboardsFromCorners_mex_initialize.c</a></td></tr>
+<tr class="ccode" id="chessboardsFromCorners_mex_initialize_h.html"><td class="ccode"><a href="#">chessboardsFromCorners_mex_initialize.h</a></td></tr>
+<tr class="ccode" id="chessboardsFromCorners_mex_terminate_c.html"><td class="ccode"><a href="#">chessboardsFromCorners_mex_terminate.c</a></td></tr>
+<tr class="ccode" id="chessboardsFromCorners_mex_terminate_h.html"><td class="ccode"><a href="#">chessboardsFromCorners_mex_terminate.h</a></td></tr>
+<tr class="ccode" id="chessboardsFromCorners_mex_types_h.html"><td class="ccode"><a href="#">chessboardsFromCorners_mex_types.h</a></td></tr>
+<tr class="ccode" id="conv2_c.html"><td class="ccode"><a href="#">conv2.c</a></td></tr>
+<tr class="ccode" id="conv2_h.html"><td class="ccode"><a href="#">conv2.h</a></td></tr>
+<tr class="ccode" id="cornerCorrelationScore_c.html"><td class="ccode"><a href="#">cornerCorrelationScore.c</a></td></tr>
+<tr class="ccode" id="cornerCorrelationScore_h.html"><td class="ccode"><a href="#">cornerCorrelationScore.h</a></td></tr>
+<tr class="ccode" id="createCorrelationPatch_c.html"><td class="ccode"><a href="#">createCorrelationPatch.c</a></td></tr>
+<tr class="ccode" id="createCorrelationPatch_h.html"><td class="ccode"><a href="#">createCorrelationPatch.h</a></td></tr>
+<tr class="ccode" id="eml_int_forloop_overflow_check_c.html"><td class="ccode"><a href="#">eml_int_forloop_overflow_check.c</a></td></tr>
+<tr class="ccode" id="eml_int_forloop_overflow_check_h.html"><td class="ccode"><a href="#">eml_int_forloop_overflow_check.h</a></td></tr>
+<tr class="ccode" id="error_c.html"><td class="ccode"><a href="#">error.c</a></td></tr>
+<tr class="ccode" id="error_h.html"><td class="ccode"><a href="#">error.h</a></td></tr>
+<tr class="ccode" id="extractuv_c.html"><td class="ccode"><a href="#">extractuv.c</a></td></tr>
+<tr class="ccode" id="extractuv_h.html"><td class="ccode"><a href="#">extractuv.h</a></td></tr>
+<tr class="ccode" id="findCorners_c.html"><td class="ccode"><a href="#">findCorners.c</a></td></tr>
+<tr class="ccode" id="findCorners_h.html"><td class="ccode"><a href="#">findCorners.h</a></td></tr>
+<tr class="ccode" id="findModesMeanShift_c.html"><td class="ccode"><a href="#">findModesMeanShift.c</a></td></tr>
+<tr class="ccode" id="findModesMeanShift_h.html"><td class="ccode"><a href="#">findModesMeanShift.h</a></td></tr>
+<tr class="ccode" id="growChessboard_c.html"><td class="ccode"><a href="#">growChessboard.c</a></td></tr>
+<tr class="ccode" id="growChessboard_h.html"><td class="ccode"><a href="#">growChessboard.h</a></td></tr>
+<tr class="ccode" id="indexShapeCheck_c.html"><td class="ccode"><a href="#">indexShapeCheck.c</a></td></tr>
+<tr class="ccode" id="indexShapeCheck_h.html"><td class="ccode"><a href="#">indexShapeCheck.h</a></td></tr>
+<tr class="ccode" id="initChessboard_c.html"><td class="ccode"><a href="#">initChessboard.c</a></td></tr>
+<tr class="ccode" id="initChessboard_h.html"><td class="ccode"><a href="#">initChessboard.h</a></td></tr>
+<tr class="ccode" id="isequal_c.html"><td class="ccode"><a href="#">isequal.c</a></td></tr>
+<tr class="ccode" id="isequal_h.html"><td class="ccode"><a href="#">isequal.h</a></td></tr>
+<tr class="ccode" id="mean_c.html"><td class="ccode"><a href="#">mean.c</a></td></tr>
+<tr class="ccode" id="mean_h.html"><td class="ccode"><a href="#">mean.h</a></td></tr>
+<tr class="ccode" id="nonMaximumSuppression_c.html"><td class="ccode"><a href="#">nonMaximumSuppression.c</a></td></tr>
+<tr class="ccode" id="nonMaximumSuppression_h.html"><td class="ccode"><a href="#">nonMaximumSuppression.h</a></td></tr>
+<tr class="ccode" id="norm_c.html"><td class="ccode"><a href="#">norm.c</a></td></tr>
+<tr class="ccode" id="norm_h.html"><td class="ccode"><a href="#">norm.h</a></td></tr>
+<tr class="ccode" id="nullAssignment_c.html"><td class="ccode"><a href="#">nullAssignment.c</a></td></tr>
+<tr class="ccode" id="nullAssignment_h.html"><td class="ccode"><a href="#">nullAssignment.h</a></td></tr>
+<tr class="ccode" id="power_c.html"><td class="ccode"><a href="#">power.c</a></td></tr>
+<tr class="ccode" id="power_h.html"><td class="ccode"><a href="#">power.h</a></td></tr>
+<tr class="ccode" id="refineCorners_c.html"><td class="ccode"><a href="#">refineCorners.c</a></td></tr>
+<tr class="ccode" id="refineCorners_h.html"><td class="ccode"><a href="#">refineCorners.h</a></td></tr>
+<tr class="ccode" id="rt_nonfinite_h.html"><td class="ccode"><a href="#">rt_nonfinite.h</a></td></tr>
+<tr class="ccode" id="rtwtypes_h.html"><td class="ccode"><a href="#">rtwtypes.h</a></td></tr>
+<tr class="ccode" id="scalexpAlloc_c.html"><td class="ccode"><a href="#">scalexpAlloc.c</a></td></tr>
+<tr class="ccode" id="scalexpAlloc_h.html"><td class="ccode"><a href="#">scalexpAlloc.h</a></td></tr>
+<tr class="ccode" id="scoreCorners_c.html"><td class="ccode"><a href="#">scoreCorners.c</a></td></tr>
+<tr class="ccode" id="scoreCorners_h.html"><td class="ccode"><a href="#">scoreCorners.h</a></td></tr>
+<tr class="ccode" id="sort1_c.html"><td class="ccode"><a href="#">sort1.c</a></td></tr>
+<tr class="ccode" id="sort1_h.html"><td class="ccode"><a href="#">sort1.h</a></td></tr>
+<tr class="ccode" id="sortIdx_c.html"><td class="ccode"><a href="#">sortIdx.c</a></td></tr>
+<tr class="ccode" id="sortIdx_h.html"><td class="ccode"><a href="#">sortIdx.h</a></td></tr>
+<tr class="ccode" id="sqrt_c.html"><td class="ccode"><a href="#">sqrt.c</a></td></tr>
+<tr class="ccode" id="sqrt_h.html"><td class="ccode"><a href="#">sqrt.h</a></td></tr>
+<tr class="ccode" id="std_c.html"><td class="ccode"><a href="#">std.c</a></td></tr>
+<tr class="ccode" id="std_h.html"><td class="ccode"><a href="#">std.h</a></td></tr>
+<tr class="ccode" id="sum_c.html"><td class="ccode"><a href="#">sum.c</a></td></tr>
+<tr class="ccode" id="sum_h.html"><td class="ccode"><a href="#">sum.h</a></td></tr>
+<tr class="ccode" id="xaxpy_c.html"><td class="ccode"><a href="#">xaxpy.c</a></td></tr>
+<tr class="ccode" id="xaxpy_h.html"><td class="ccode"><a href="#">xaxpy.h</a></td></tr>
+</tbody>
+</table>
+</div>
+<!-- End C Code List -->
+<div class="grayline methodset" onclick="ccodeClick(event,3);">
+<a class="collapsed">Interface Source Files</a>
+</div>
+<!-- Begin C Code List -->
+<div id="ccodelistbody3" class="hidden">
+<table class="myfunc-list" cellspacing="0" cellpadding="0" onclick="cFileClickWithMexWarning(event);">
+<tbody>
+<tr class="ccode" id="_coder_chessboardsFromCorners_mex_api_c.html"><td class="ccode"><a href="#">_coder_chessboardsFromCorners_mex_api.c</a></td></tr>
+<tr class="ccode" id="_coder_chessboardsFromCorners_mex_api_h.html"><td class="ccode"><a href="#">_coder_chessboardsFromCorners_mex_api.h</a></td></tr>
+<tr class="ccode" id="_coder_chessboardsFromCorners_mex_info_c.html"><td class="ccode"><a href="#">_coder_chessboardsFromCorners_mex_info.c</a></td></tr>
+<tr class="ccode" id="_coder_chessboardsFromCorners_mex_info_h.html"><td class="ccode"><a href="#">_coder_chessboardsFromCorners_mex_info.h</a></td></tr>
+<tr class="ccode" id="_coder_chessboardsFromCorners_mex_mex_c.html"><td class="ccode"><a href="#">_coder_chessboardsFromCorners_mex_mex.c</a></td></tr>
+<tr class="ccode" id="_coder_chessboardsFromCorners_mex_mex_h.html"><td class="ccode"><a href="#">_coder_chessboardsFromCorners_mex_mex.h</a></td></tr>
+</tbody>
+</table>
+</div>
+<!-- End C Code List -->
+</div>
+<!-- End C Code -->
+</div>
+<!-- Tooltips -->
+<div class="aux hidden">
+<div class="tooltips">
+<div class="tooltip" id="TT1"><table class="tooltip"><tr><th>Size</th><td>1 x 5</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT2"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT3"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>struct</td></tr></table></div>
+<div class="tooltip" id="TT4"><table class="tooltip"><tr><th>Size</th><td>100 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT5"><table class="tooltip"><tr><th>Size</th><td>100 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT6"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT7"><table class="tooltip"><tr><th>Size</th><td>6 x 7</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT8"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT9"><table class="tooltip"><tr><th>Size</th><td>1 x 4 *</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT10"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT11"><table class="tooltip"><tr><th>Size</th><td><b>:</b>3 x <b>:</b>3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT12"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT13"><table class="tooltip"><tr><th>Size</th><td>5 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT14"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT15"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT16"><table class="tooltip"><tr><th>Size</th><td>5 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT17"><table class="tooltip"><tr><th>Size</th><td>5 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT18"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT19"><table class="tooltip"><tr><th>Size</th><td><b>:</b>5 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT20"><table class="tooltip"><tr><th>Size</th><td>5 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT21"><table class="tooltip"><tr><th>Size</th><td><b>:</b>5 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT22"><table class="tooltip"><tr><th>Size</th><td>0 x 0</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT23"><table class="tooltip"><tr><th>Size</th><td>1 x 5</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT24"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT25"><table class="tooltip"><tr><th>Size</th><td>1 x 0</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT26"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT27"><table class="tooltip"><tr><th>Size</th><td>1 x 23</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT28"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT29"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT30"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT31"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>int32</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT32"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT33"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT34"><table class="tooltip"><tr><th>Size</th><td>1 x 100</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT35"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT36"><table class="tooltip"><tr><th>Size</th><td>1 x 100 *</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT37"><table class="tooltip"><tr><th>Size</th><td>1 x 100 *</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT38"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>100</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT39"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>100</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT40"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT41"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>mxArray</td></tr></table></div>
+<div class="tooltip" id="TT42"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT43"><table class="tooltip"><tr><th>Size</th><td>1 x 14</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT44"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT45"><table class="tooltip"><tr><th>Size</th><td>1 x 31</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT46"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT47"><table class="tooltip"><tr><th>Size</th><td>1 x 30</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT48"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT49"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT50"><table class="tooltip"><tr><th>Size</th><td><b>:</b>10000 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT51"><table class="tooltip"><tr><th>Size</th><td><b>:</b>100 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT52"><table class="tooltip"><tr><th>Size</th><td>3 x 3 *</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT53"><table class="tooltip"><tr><th>Size</th><td><b>:</b>9 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT54"><table class="tooltip"><tr><th>Size</th><td>3 x 3 *</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT55"><table class="tooltip"><tr><th>Size</th><td><b>:</b>100 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT56"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT57"><table class="tooltip"><tr><th>Size</th><td><b>:</b>100 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT58"><table class="tooltip"><tr><th>Size</th><td><b>:</b>100 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT59"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT60"><table class="tooltip"><tr><th>Size</th><td>1 x 7</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT61"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT62"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT63"><table class="tooltip"><tr><th>Size</th><td>1 x 22</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT64"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>int8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT65"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT66"><table class="tooltip"><tr><th>Size</th><td>3 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT67"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT68"><table class="tooltip"><tr><th>Size</th><td>3 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT69"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT70"><table class="tooltip"><tr><th>Size</th><td>3 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT71"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT72"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT73"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT74"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT75"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT76"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT77"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT78"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT79"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT80"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT81"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT82"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT83"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT84"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x <b>:</b>?</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT85"><table class="tooltip"><tr><th>Size</th><td>0 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT86"><table class="tooltip"><tr><th>Size</th><td><b>:</b>100 x <b>:</b>100</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT87"><table class="tooltip"><tr><th>Size</th><td>0 x 0</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT88"><table class="tooltip"><tr><th>Size</th><td>0 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT89"><table class="tooltip"><tr><th>Size</th><td>1 x 0</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT90"><table class="tooltip"><tr><th>Size</th><td><b>:</b>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT91"><table class="tooltip"><tr><th>Size</th><td><b>:</b>1 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT92"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT93"><table class="tooltip"><tr><th>Size</th><td><b>:</b>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT94"><table class="tooltip"><tr><th>Size</th><td><b>:</b>100 x <b>:</b>100</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT95"><table class="tooltip"><tr><th>Size</th><td><b>:</b>1 x <b>:</b>100</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT96"><table class="tooltip"><tr><th>Size</th><td><b>:</b>100 x <b>:</b>1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT97"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT98"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT99"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>100</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT100"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT101"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT102"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT103"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT104"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT105"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT106"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT107"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT108"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT109"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT110"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT111"><table class="tooltip"><tr><th>Size</th><td><b>:</b>5 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT112"><table class="tooltip"><tr><th>Size</th><td>5 x 1 *</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT113"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>5</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT114"><table class="tooltip"><tr><th>Size</th><td><b>:</b>5 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT115"><table class="tooltip"><tr><th>Size</th><td>1 x 5</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT116"><table class="tooltip"><tr><th>Size</th><td>5 x 7</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT117"><table class="tooltip"><tr><th>Size</th><td>4 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT118"><table class="tooltip"><tr><th>Size</th><td>42 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT119"><table class="tooltip"><tr><th>Size</th><td>1 x 2 *</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT120"><table class="tooltip"><tr><th>Size</th><td>2 x 1 *</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT121"><table class="tooltip"><tr><th>Size</th><td>7 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT122"><table class="tooltip"><tr><th>Size</th><td>1 x 7</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT123"><table class="tooltip"><tr><th>Size</th><td>7 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT124"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x <b>:</b>2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT125"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT126"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT127"><table class="tooltip"><tr><th>Size</th><td>35 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT128"><table class="tooltip"><tr><th>Size</th><td>16 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT129"><table class="tooltip"><tr><th>Size</th><td>4 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT130"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT131"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT132"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT133"><table class="tooltip"><tr><th>Size</th><td>5 x 2 *</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT134"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>unknown</td></tr></table></div>
+<div class="tooltip" id="TT135"><table class="tooltip"><tr><th>Size</th><td><b>:</b>2 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT136"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>struct</td></tr></table></div>
+<div class="tooltip" id="TT137"><table class="tooltip"><tr><th>Size</th><td>720 x 1280</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT138"><table class="tooltip"><tr><th>Size</th><td>720 x 1280</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT139"><table class="tooltip"><tr><th>Size</th><td><b>:</b>921600 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT140"><table class="tooltip"><tr><th>Size</th><td>720 x 1280</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT141"><table class="tooltip"><tr><th>Size</th><td>921600 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT142"><table class="tooltip"><tr><th>Size</th><td>6 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT143"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>struct</td></tr></table></div>
+<div class="tooltip" id="TT144"><table class="tooltip"><tr><th>Size</th><td><b>:</b>720 x <b>:</b>720</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT145"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>struct</td></tr></table></div>
+<div class="tooltip" id="TT146"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>struct</td></tr></table></div>
+<div class="tooltip" id="TT147"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>struct</td></tr></table></div>
+<div class="tooltip" id="TT148"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>struct</td></tr></table></div>
+<div class="tooltip" id="TT149"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT150"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT151"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT152"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT153"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.internal.cell</td></tr></table></div>
+<div class="tooltip" id="TT154"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.internal.cell</td></tr></table></div>
+<div class="tooltip" id="TT155"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT156"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.internal.cell</td></tr></table></div>
+<div class="tooltip" id="TT157"><table class="tooltip"><tr><th>Size</th><td>1 x 9</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT158"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.internal.cell</td></tr></table></div>
+<div class="tooltip" id="TT159"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.internal.cell</td></tr></table></div>
+<div class="tooltip" id="TT160"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT161"><table class="tooltip"><tr><th>Size</th><td>1 x 12</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT162"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT163"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT164"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT165"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT166"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT167"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT168"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT169"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT170"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT171"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT172"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT173"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT174"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT175"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT176"><table class="tooltip"><tr><th>Size</th><td><b>:</b>25 x <b>:</b>25</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT177"><table class="tooltip"><tr><th>Size</th><td>1 x 8</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT178"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT179"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT180"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT181"><table class="tooltip"><tr><th>Size</th><td>1 x 5</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT182"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT183"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT184"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT185"><table class="tooltip"><tr><th>Size</th><td>1 x 32</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT186"><table class="tooltip"><tr><th>Size</th><td>1 x 32</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT187"><table class="tooltip"><tr><th>Size</th><td>4 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT188"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT189"><table class="tooltip"><tr><th>Size</th><td>4 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT190"><table class="tooltip"><tr><th>Size</th><td>256 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT191"><table class="tooltip"><tr><th>Size</th><td>256 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT192"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT193"><table class="tooltip"><tr><th>Size</th><td><b>:</b>518400 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT194"><table class="tooltip"><tr><th>Size</th><td><b>:</b>518400 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT195"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT196"><table class="tooltip"><tr><th>Size</th><td>2 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT197"><table class="tooltip"><tr><th>Size</th><td>3 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT198"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>720</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT199"><table class="tooltip"><tr><th>Size</th><td><b>:</b>720 x <b>:</b>1280</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT200"><table class="tooltip"><tr><th>Size</th><td><b>:</b>2 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT201"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT202"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>1280</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT203"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="V1"><table class="tooltip"><tr><th>Value</th><td>     3</br></td></tr></table></div>
+<div class="tooltip" id="V2"><table class="tooltip"><tr><th>Value</th><td>     5</br></td></tr></table></div>
+<div class="tooltip" id="V3"><table class="tooltip"><tr><th>Value</th><td>     1</br></td></tr></table></div>
+<div class="tooltip" id="V4"><table class="tooltip"><tr><th>Value</th><td>     0</br></td></tr></table></div>
+</div>
+</div>
+<!-- End Tooltips -->
+
+<div class="south">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="summary"><span>Summary</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="messages"><span>All Messages (0)</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="watchlist"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item hidden"><span class="tab-link" id="watchload"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="buildlog1"><span>Target Build Log</span></span></li>
+</ul>
+
+<!-- Compilation Summary -->
+<div id="summarybody" class="ui-tabs-panel">
+<table cellpadding="1" cellspacing="4">
+<tr><td>C source code generated on:</td><td>22-Jan-2017 11:50:38</td></tr>
+<tr><td>Coding target:</td><td>C MEX Function</td></tr>
+<tr><td>Number of errors:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+<tr><td>Number of warnings:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+<tr><td>Number of notices:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+</table>
+<p/><p/><table>
+<tr><td><b>Tell Us What You Think</b></td></tr>
+<tr><td>We value your feedback. Please take a few minutes to answer this short questionnaire regarding the Code Generation Report.</td></tr>
+<tr><td><a href="matlab: web('http://www.customersat3.com/TakeSurvey.asp?si=ELu7GTnTYtk%3D','-browser');">&gt;&gt;Provide Feedback</a></td></tr>
+</table>
+</div>
+
+<!-- Message Table -->
+<div id="messagesbody" class="ui-tabs-panel hidden">
+<div>
+<div class="msgsuccess">Code generation successful. Click here to <a href="javaScript:selectSummaryTab();">view summary</a>.</div>
+</div>
+</div>
+<!-- Watchlist Table -->
+<div id="watchlistbody" class="ui-tabs-panel hidden">
+</div>
+<div id="watchloadbody" class="ui-tabs-panel hidden">
+Loading Variables table ...
+</div>
+
+<!-- Target Build Log -->
+<div id="buildlog1body" class="ui-tabs-panel hidden">
+<div class="grayline"></div>
+<table cellpadding="4" cellspacing="1"><tr>
+<td align="left" class="td-linebottomrt-gray" colspan="2">Build Parameters</td>
+</tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Build directory</td>
+<td align="left" valign="top" class="td-linebottomrt-link"><a href="matlab: cd('C:\Users\Luisito\Documents\MAESTRIA ING_MECATRONICA\Tesis\Codigos\DeteccionCornersLargasDistancias\v7\codegen\mex\chessboardsFromCorners_mex')">C:\Users\Luisito\Documents\MAESTRIA ING_MECATRONICA\Tesis\Codigos\DeteccionCornersLargasDistancias\v7\codegen\mex\chessboardsFromCorners_mex</a></td></tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Make wrapper</td>
+<td align="left" valign="top" class="td-linebottomrt-link">chessboardsFromCorners_mex_mex.bat</td></tr>
+</table>
+<br/>
+<table border="1" cellpadding="4" cellspacing="1" width="100%">
+<tr><td align="left" class="td-linebottomrt-gray">Build Log</td></tr>
+<tr><td valign="top" class="td-script">
+<pre>
+<span class="td-line-number">    1   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "chessboardsFromCorners_mex_data.c"</span>
+<span class="td-line-number">    2   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "chessboardsFromCorners_mex_initialize.c"</span>
+<span class="td-line-number">    3   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "chessboardsFromCorners_mex_terminate.c"</span>
+<span class="td-line-number">    4   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "chessboardsFromCorners.c"</span>
+<span class="td-line-number">    5   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "extractuv.c"</span>
+<span class="td-line-number">    6   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "findCorners.c"</span>
+<span class="td-line-number">    7   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "initChessboard.c"</span>
+<span class="td-line-number">    8   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "eml_int_forloop_overflow_check.c"</span>
+<span class="td-line-number">    9   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "indexShapeCheck.c"</span>
+<span class="td-line-number">   10   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "nullAssignment.c"</span>
+<span class="td-line-number">   11   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "power.c"</span>
+<span class="td-line-number">   12   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "scalexpAlloc.c"</span>
+<span class="td-line-number">   13   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "error.c"</span>
+<span class="td-line-number">   14   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "sqrt.c"</span>
+<span class="td-line-number">   15   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "any.c"</span>
+<span class="td-line-number">   16   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "isequal.c"</span>
+<span class="td-line-number">   17   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "std.c"</span>
+<span class="td-line-number">   18   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "mean.c"</span>
+<span class="td-line-number">   19   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "chessboardEnergy.c"</span>
+<span class="td-line-number">   20   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "norm.c"</span>
+<span class="td-line-number">   21   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "growChessboard.c"</span>
+<span class="td-line-number">   22   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "atan2.c"</span>
+<span class="td-line-number">   23   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "all.c"</span>
+<span class="td-line-number">   24   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "conv2.c"</span>
+<span class="td-line-number">   25   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "xaxpy.c"</span>
+<span class="td-line-number">   26   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "createCorrelationPatch.c"</span>
+<span class="td-line-number">   27   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "sum.c"</span>
+<span class="td-line-number">   28   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "nonMaximumSuppression.c"</span>
+<span class="td-line-number">   29   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "refineCorners.c"</span>
+<span class="td-line-number">   30   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "findModesMeanShift.c"</span>
+<span class="td-line-number">   31   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "sort1.c"</span>
+<span class="td-line-number">   32   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "sortIdx.c"</span>
+<span class="td-line-number">   33   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "scoreCorners.c"</span>
+<span class="td-line-number">   34   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "cornerCorrelationScore.c"</span>
+<span class="td-line-number">   35   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "interface/_coder_chessboardsFromCorners_mex_info.c"</span>
+<span class="td-line-number">   36   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "interface/_coder_chessboardsFromCorners_mex_api.c"</span>
+<span class="td-line-number">   37   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "interface/_coder_chessboardsFromCorners_mex_mex.c"</span>
+<span class="td-line-number">   38   </span><span class="td-line-normal">gcc -c -fexceptions -fno-omit-frame-pointer -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE    -O -DNDEBUG   -I "C:\PROGRA~1\MATLAB\R2016a/simulink/include" -I "C:\PROGRA~1\MATLAB\R2016a/toolbox/shared/simtargets" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7" -I "C:\Users\Luisito\DOCUME~1\MAESTR~1\Tesis\Codigos\DETECC~1\v7\codegen\mex\chessboardsFromCorners_mex" -I ".\interface" -I "C:\PROGRA~1\MATLAB\R2016a\extern\include" -I "." "chessboardsFromCorners_mex_emxutil.c"</span>
+<span class="td-line-number">   39   </span><span class="td-line-normal">gcc  -Wl,--version-script,chessboardsFromCorners_mex_mex.map chessboardsFromCorners_mex_data.o chessboardsFromCorners_mex_initialize.o chessboardsFromCorners_mex_terminate.o chessboardsFromCorners.o extractuv.o findCorners.o initChessboard.o eml_int_forloop_overflow_check.o indexShapeCheck.o nullAssignment.o power.o scalexpAlloc.o error.o sqrt.o any.o isequal.o std.o mean.o chessboardEnergy.o norm.o growChessboard.o atan2.o all.o conv2.o xaxpy.o createCorrelationPatch.o sum.o nonMaximumSuppression.o refineCorners.o findModesMeanShift.o sort1.o sortIdx.o scoreCorners.o cornerCorrelationScore.o _coder_chessboardsFromCorners_mex_info.o _coder_chessboardsFromCorners_mex_api.o _coder_chessboardsFromCorners_mex_mex.o chessboardsFromCorners_mex_emxutil.o -m64 -Wl,--no-undefined -shared -L"C:\Program Files\MATLAB\R2016a\extern\lib\win64\mingw64" -llibmx -llibmex -llibmat -lm -llibmwlapack -llibmwblas      -o chessboardsFromCorners_mex.mexw64 -L"C:\PROGRA~1\MATLAB\R2016a\extern\lib\win64\mingw64" -llibmwblas   -llibemlrt -llibcovrt -llibut -llibmwmathutil </span>
+<span class="td-line-number">   40   </span><span class="td-line-normal">Build completed using compiler mingw64</span>
+</pre>
+</td></tr></table>
+
+</div>
+</div>
+<!-- Begin MATLAB Code Panel -->
+<div class="center">
+<div class="center-title">
+<div class="ui-tabs-nav-item ui-tabs-selected">
+<span class="functiontitle">
+</span>
+<!-- Begin Call Sites -->
+<span id="callsiteselecttable" class="call-sites-tbl">
+<span id="callsiteselectlabel" class="filtered">Calls:</span>
+<select id="callsiteselect" onchange="callSiteChange(event)">
+<option value="callsiteprompt">Select a function call:</option>
+</select>
+</span>
+<!-- End Call Sites -->
+</div>
+</div>
+<div class="ui-tabs-panel">
+<div class="code" onmouseover="mcodeMouseOver(event);" onmouseout="mcodeMouseOut(event);"onclick="mcodeClick(event);">
+</div>
+</div>
+</div>
+<!-- End MATLAB Code Panel -->
+</body>
+</html>

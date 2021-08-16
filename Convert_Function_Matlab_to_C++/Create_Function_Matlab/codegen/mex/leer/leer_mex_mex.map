@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		leer;
+		leer_initialize;
+		leer_terminate;
+		leer_atexit;
+	local:
+		*;
+};

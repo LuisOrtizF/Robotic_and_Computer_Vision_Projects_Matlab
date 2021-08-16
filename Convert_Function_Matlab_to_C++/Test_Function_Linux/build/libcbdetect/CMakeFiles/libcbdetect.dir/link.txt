@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibcbdetect.a  CMakeFiles/libcbdetect.dir/leer.cpp.o
+/usr/bin/ranlib liblibcbdetect.a
