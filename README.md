@@ -67,4 +67,4 @@ This repository contains examples of some tasks of computer vision implemented w
 ## NOTE:
 
 |If you find any of these codes helpful, please share my __[GitHub](https://github.com/LuisOrtizF)__ and __*STAR*__ :star: this repository to help other enthusiasts to find these tools. Remember, the knowledge must be shared. Otherwise, it is useless and lost in time.|
-|:-----------| control the robot in manual and automatic form. When you use the manual control, you can drive the robot using the keyboard, and when you press the letter **a** in the terminal, the code switches to automatic control.
+| :----------- |
